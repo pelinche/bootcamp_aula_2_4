@@ -17,6 +17,7 @@ const studentSchema = mongoose.Schema({
   value: {
     type: Number,
     required: true,
+    //valor mínimo deve ser maior que zero
     min:0,
   },
   lastModified: {
