@@ -1,3 +1,4 @@
+/* Imports */
 import express from 'express';
 import mongoose from 'mongoose';
 
@@ -6,6 +7,7 @@ import {studentRouter} from './routes/studentRouter.js';
 const urlMongoDB = "mongodb://localhost/grades";
 //Conectando ao mongoDB pelo Mongoose
 
+//Conexão com o MongoDB
 await mongoose.connect(urlMongoDB,
   {useNewUrlParser: true, 
     useUnifiedTopology: true
